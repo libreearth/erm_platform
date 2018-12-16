@@ -1,0 +1,36 @@
+<h1>Listing Roles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Valid from</th>
+      <th>Valid to</th>
+      <th>Content</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for role <- @roles do %>
+    <tr>
+      <td><%= role.type %></td>
+      <td><%= role.name %></td>
+      <td><%= role.description %></td>
+      <td><%= role.valid_from %></td>
+      <td><%= role.valid_to %></td>
+      <td><%= role.content %></td>
+
+      <td>
+        <%= link "Show", to: Routes.role_path(@conn, :show, role) %>
+        <%= link "Edit", to: Routes.role_path(@conn, :edit, role) %>
+        <%= link "Delete", to: Routes.role_path(@conn, :delete, role), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Role", to: Routes.role_path(@conn, :new) %></span>

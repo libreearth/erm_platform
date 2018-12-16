@@ -1,0 +1,33 @@
+<h1>Show Authentification</h1>
+
+<ul>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @authentification.email %>
+  </li>
+
+  <li>
+    <strong>Password hash:</strong>
+    <%= @authentification.password_hash %>
+  </li>
+
+  <li>
+    <strong>Provider:</strong>
+    <%= @authentification.provider %>
+  </li>
+
+  <li>
+    <strong>Uid:</strong>
+    <%= @authentification.uid %>
+  </li>
+
+  <li>
+    <strong>Verified:</strong>
+    <%= @authentification.verified %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.authentification_path(@conn, :edit, @authentification) %></span>
+<span><%= link "Back", to: Routes.authentification_path(@conn, :index) %></span>

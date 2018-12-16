@@ -1,0 +1,7 @@
+
+<!-- Render Activity KanBan --> 
+<span><%= link "New Activity", to: Routes.activity_path(@conn, :new), class: "button is-primary is-rounded" %></span>
+<%= render "board.html", assigns %>
+
+
+

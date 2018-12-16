@@ -1,0 +1,43 @@
+<h1>Show Activity</h1>
+
+<ul>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @activity.type %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @activity.status %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @activity.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @activity.description %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= Jason.encode!(@activity.content) %>
+  </li>
+
+  <li>
+    <strong>Date from:</strong>
+    <%= @activity.date_from %>
+  </li>
+
+  <li>
+    <strong>Date to:</strong>
+    <%= @activity.date_to %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.activity_path(@conn, :edit, @activity) %></span>
+<span><%= link "Back", to: Routes.activity_path(@conn, :index) %></span>

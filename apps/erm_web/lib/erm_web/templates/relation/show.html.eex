@@ -1,0 +1,34 @@
+<h1>Show Relation</h1>
+
+<ul>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @relation.type %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @relation.title %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= Jason.encode!(@relation.content) %>
+  </li>
+
+
+  <li>
+    <strong>Entity From id:</strong>
+    <%= @relation.entity_from_id %>
+  </li>
+
+    <li>
+    <strong>Entity To id:</strong>
+    <%= @relation.entity_to_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.relation_path(@conn, :edit, @relation) %></span>
+<span><%= link "Back", to: Routes.relation_path(@conn, :index) %></span>

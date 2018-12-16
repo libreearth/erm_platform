@@ -1,0 +1,20 @@
+<div class="board">
+  <div class="board-column todo">
+    <div class="board-column-header">To do</div>
+    <div class="board-column-content">
+    <%= for activity <- @activities do %>
+        <%= render "item.html", activity: activity %>   
+    <% end %>
+    </div>
+  </div>
+  <div class="board-column working">
+    <div class="board-column-header">Working</div>
+    <div class="board-column-content">
+    </div>
+  </div>
+  <div class="board-column done">
+    <div class="board-column-header">Done</div>
+    <div class="board-column-content">
+    </div>
+  </div>
+</div>

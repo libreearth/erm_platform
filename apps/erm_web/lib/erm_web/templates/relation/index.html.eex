@@ -1,0 +1,34 @@
+<h1>Listing Relations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Entity from ID</th>
+      <th>Entity to ID</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for relation <- @relations do %>
+    <tr>
+      <td><%= relation.type %></td>
+      <td><%= relation.title %></td>
+      <td><%= relation.content %></td>
+      <td><%= relation.entity_to_id %></td>
+      <td><%= relation.entity_from_id %></td>
+
+      <td>
+        <%= link "Show", to: Routes.relation_path(@conn, :show, relation) %>
+        <%= link "Edit", to: Routes.relation_path(@conn, :edit, relation) %>
+        <%= link "Delete", to: Routes.relation_path(@conn, :delete, relation), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Relation", to: Routes.relation_path(@conn, :new) %></span>

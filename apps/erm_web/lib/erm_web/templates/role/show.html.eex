@@ -1,0 +1,38 @@
+<h1>Show Role</h1>
+
+<ul>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @role.type %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @role.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @role.description %>
+  </li>
+
+  <li>
+    <strong>Valid from:</strong>
+    <%= @role.valid_from %>
+  </li>
+
+  <li>
+    <strong>Valid to:</strong>
+    <%= @role.valid_to %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @role.content %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.role_path(@conn, :edit, @role) %></span>
+<span><%= link "Back", to: Routes.role_path(@conn, :index) %></span>

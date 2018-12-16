@@ -1,0 +1,275 @@
+         <div class="level">
+            <div class="level-left">
+              <h1 class="subtitle is-3">
+                <span class="has-text-grey-light">Hello</span> <strong> <%= Guardian.Plug.current_resource(@conn).title %> </strong>
+              </h1>
+            </div>
+            <div class="level-right">
+              <div class="select">
+                <select>
+                  <option>Today</option>
+                  <option>Yesterday</option>
+                  <option>This Week</option>
+                  <option selected>This Month</option>
+                  <option>This Year</option>
+                  <option>All time</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-multiline">
+            <div class="column is-3-tablet is-3-desktop is-3-widescreen">
+              <div class="notification is-link has-text">
+                <p class="title is-1">232</p>
+                <p class="subtitle is-4">Farms</p>
+              </div>
+            </div>
+
+            <div class="column is-3-tablet is-3-desktop is-3-widescreen">
+              <div class="notification is-warning has-text">
+                <p class="title is-1">133</p>
+                <p class="subtitle is-4">Farmers</p>
+              </div>
+            </div>
+
+            <div class="column is-3-tablet is-3-desktop is-3-widescreen">
+              <div class="notification is-danger has-text">
+                <p class="title is-1">188</p>
+                <p class="subtitle is-4">Hectares</p>
+              </div>
+            </div>
+
+            <div class="column is-3-tablet is-3-desktop is-3-widescreen">
+              <div class="notification is-info has-text">
+                <p class="title is-1">350</p>
+                <p class="subtitle is-4">Fields</p>
+              </div>
+            </div>
+
+            <div class="column is-6-tablet is-6-desktop is-6-fullhd">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="title is-4">
+                    Today's activities
+                  </h2>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">Milk pick-up</a>
+                        </p>
+                        <small>
+                          Dec 3, 17:38 by <a href="edit-customer.html">Boersma</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <p class="title is-5 is-marginless">
+                          500 liters
+                        </p>
+                        <span class="tag is-warning">In progress</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">Fertilizer Assessment</a>
+                        </p>
+                        <small>
+                          Dec 3, 11:45 by <a href="#">De Jong</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <span class="tag is-success">Successful</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="#">Fertilizer Spreading</a>
+                        </p>
+                        <small>
+                          Dec 3 12, 21:57 by <a href="#">Janssen</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <p class="title is-5 is-marginless">
+                          Manure
+                        </p>
+                        <span class="tag is-danger">Deficiency</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="button is-link is-outlined" href="/activities">View my activities</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-6-tablet is-6-desktop is-6-fullhd">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="title is-4">
+                    Most active farmers
+                  </h2>
+
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">1</p>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-customer.html">Lucas Jensen</a>
+                      </p>
+                      <p class="subtitle is-6">
+                        Noord Holland
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      7 Activities
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">2</p>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-customer.html">Julia Bakker</a>
+                      </p>
+                      <p class="subtitle is-6">
+                        Zuid Holland
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      5 Activities
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">3</p>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-customer.html">Emma De Long</a>
+                      </p>
+                      <p class="subtitle is-6">
+                        Utrecht
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      3 Activities
+                    </div>
+                  </div>
+
+                  <a class="button is-link is-outlined" href="customers.html">View all farmers</a>
+                </div>
+              </div>
+            </div>
+
+                <div class="column is-6-tablet is-6-desktop is-6-fullhd">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="title is-4">
+                    Farmer Support
+                  </h2>
+
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">Advice on soil sample collection</a>
+                        </p>
+                        <small>
+                          Dec 3, 17:38 by <a href="edit-customer.html">Boersma</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <span class="tag is-info">New</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="#">Not enough information</a>
+                        </p>
+                        <small>
+                          Dec 3 12, 21:57 by <a href="#">Janssen</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <span class="tag is-danger">Escalated</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">What fertilizer should I use?</a>
+                        </p>
+                        <small>
+                          Dec 3, 17:38 by <a href="edit-customer.html">De Vries</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <span class="tag is-info">New</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="#">Add new parcel to farm</a>
+                        </p>
+                        <small>
+                          Dec 3, 11:45 by <a href="#">De Jong</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <span class="tag is-success">Closed</span>
+                      </div>
+                    </div>
+                  </div>
+
+   
+
+                  <a class="button is-link is-outlined" href="orders.html">View support requests</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+

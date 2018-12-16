@@ -1,0 +1,18 @@
+<div class="board-item">
+    <div class="board-item-content">
+            <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html"><%= @activity.title %></a>
+                        </p>
+                        <small>
+                          Due: <%= @activity.date_to %>
+                        </small>
+                      </div>
+                    </div>
+                   
+                  </div>
+
+    </div>
+</div>

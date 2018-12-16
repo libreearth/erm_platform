@@ -1,0 +1,43 @@
+<h1>Show Entity</h1>
+
+<ul>
+
+  <li>
+    <strong>ID:</strong>
+    <%= @entity.id %>
+  </li>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @entity.type %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @entity.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @entity.description %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= to_safe_content(@entity.content) %>
+  </li>
+
+  <li>
+    <strong>Geometry:</strong>
+    <%= to_geo_display(@entity.geom) %>
+  </li>
+
+  <li>
+    <strong>H3id:</strong>
+    <%= @entity.h3id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.entity_path(@conn, :edit, @entity) %></span>
+<span><%= link "Back", to: Routes.entity_path(@conn, :index) %></span>

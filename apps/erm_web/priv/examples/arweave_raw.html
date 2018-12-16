@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AWG ERM with EcoNet and Arweave</title>
+
+</head>
+
+<body>
+
+    <img class="econet-logo" src="" alt="EcoNet ERM Arweave integration">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+    <script>
+
+        var node = 'https://arweave.erm.earth';
+        var path = '/tx/Hfw7-7t2IpjKI5j2DTVakmVq7CksROK-KMWPW6mqGTk';
+        var url = node + path;
+
+        fetch(url)
+            .then(
+                function (response) {
+                    if (response.status !== 200) {
+                        console.log('Looks like there was a problem. Status Code: ' +
+                            response.status);
+                        return;
+                    }
+
+                    // Examine the text in the response
+                    response.json().then(function (tx) {
+                        console.log("got data");
+                        let $img = $(".econet-logo");
+                        const imgData = 'data:image/jpeg;charset=utf-8;base64,' + tx.data;
+                        $img.attr('src', imgData);
+                    });
+                }
+            )
+            .catch(function (err) {
+                console.log('Fetch Error :-S', err);
+            });
+
+    </script>
+</body>
+
+</html>

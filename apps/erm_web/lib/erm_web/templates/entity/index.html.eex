@@ -1,0 +1,38 @@
+<h1>Listing Entities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Content</th>
+      <th>Geometry</th>
+      <th>H3id</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for entity <- @entities do %>
+    <tr>
+      <td><%= entity.id %></td>
+      <td><%= entity.type %></td>
+      <td><%= entity.title %></td>
+      <td><%= entity.description %></td>
+      <td><%= to_safe_content(entity.content) %></td>
+      <td><%= to_string(entity.geom) %></td>
+      <td><%= entity.h3id %></td>
+
+      <td>
+        <%= link "Show", to: Routes.entity_path(@conn, :show, entity) %>
+        <%= link "Edit", to: Routes.entity_path(@conn, :edit, entity) %>
+        <%= link "Delete", to: Routes.entity_path(@conn, :delete, entity), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Entity", to: Routes.entity_path(@conn, :new) %></span>

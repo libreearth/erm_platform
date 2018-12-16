@@ -1,0 +1,34 @@
+<h1>Listing Authentifications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Password hash</th>
+      <th>Provider</th>
+      <th>Uid</th>
+      <th>Verified</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for authentification <- @authentifications do %>
+    <tr>
+      <td><%= authentification.email %></td>
+      <td><%= authentification.password_hash %></td>
+      <td><%= authentification.provider %></td>
+      <td><%= authentification.uid %></td>
+      <td><%= authentification.verified %></td>
+
+      <td>
+        <%= link "Show", to: Routes.authentification_path(@conn, :show, authentification) %>
+        <%= link "Edit", to: Routes.authentification_path(@conn, :edit, authentification) %>
+        <%= link "Delete", to: Routes.authentification_path(@conn, :delete, authentification), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Authentification", to: Routes.authentification_path(@conn, :new) %></span>
