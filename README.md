@@ -19,7 +19,7 @@ ERM helps manage the regeneration process, from initial assessments, public camp
 * Resilient compute architecture without tolerance for downtime (either for maintenance or disaster), given the life-critical functionalities being developed.
 
 ## Attribution
-The term Environmental Relationship Management has been coined by Angel Imaz Rivero who as well has developed it in its current form, including its design and reference implementation.
+The term Environmental Relationship Management has been coined by Angel Imaz Rivero who as well has developed it in its current form, including its design and reference implementation. ERM is Open Source and GPLv3.
 
 The text above has been written by cooperation between EcoNet, Commonland and others with input from Angel Imaz Rivero.
 
