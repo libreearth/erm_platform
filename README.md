@@ -1,6 +1,6 @@
 # Environmental Relationship Management
 
-ERM helps manage the restoration process, from initial assessments, public campaigns, intervention planning, monitoring, validation, and communication between stakeholders. Such capabilities have long been pursued; the current effort benefits from great technical review and development efforts, with several new innovations ensuring highly flexible approach to integrate existing data and tools, easily add new functionality, and scale to massive levels (in the billions of users).
+ERM helps manage the regeneration process, from initial assessments, public campaigns, intervention planning, monitoring, validation, and communication between stakeholders. Such capabilities have long been pursued; the current effort benefits from great technical review and development efforts, with several new innovations ensuring highly flexible approach to integrate existing data and tools, easily add new functionality, and scale to massive levels (in the billions of users).
 
 ## Taking cues from the development of the internet, all parts of the system are:
 
@@ -17,6 +17,11 @@ ERM helps manage the restoration process, from initial assessments, public campa
 * Customizability to context-specific processes, and sharing of knowledge and innovations between users, according to their preference.
 * Highly secure private data storage as well as permanent and uncensorable access to public data (and published open-access analyses thereof).
 * Resilient compute architecture without tolerance for downtime (either for maintenance or disaster), given the life-critical functionalities being developed.
+
+## Attribution
+The term Environmental Relationship Management has been coined by Angel Imaz Rivero who as well has developed it in its current form, including its design and reference implementation.
+
+The text above has been written by cooperation between EcoNet, Commonland and others with input from Angel Imaz Rivero.
 
 ## Starting up the application server
 
