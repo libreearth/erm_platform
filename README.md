@@ -1,6 +1,6 @@
 # Environmental Relationship Management
 
-ERM helps manage the regeneration process, from initial assessments, public campaigns, intervention planning, monitoring, validation, and communication between stakeholders. Such capabilities have long been pursued; the current effort benefits from great technical review and development efforts, with several new innovations ensuring highly flexible approach to integrate existing data and tools, easily add new functionality, and scale to massive levels (in the billions of users).
+ERM helps manage the protection and regeneration process of Earth - from inspirations, to: initial assessments, public campaigns, intervention planning, monitoring, validation, and communication between earthlings.
 
 ## Taking cues from the development of the internet, all parts of the system are:
 
